@@ -60,3 +60,141 @@ img {
   width: 90%; /* cuando el ancho sea menos de 1200px va a ocupar el 90% */
   margin: 0 auto; /* centra el contenedor */
 }
+
+/* HEADER */
+
+.header {
+  background-image: url(../img/header_bg.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 10rem;
+  padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-size: 55rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .header {
+    background-size: 60rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    background-size: 80rem;
+  }
+}
+
+@media (min-width: 1760px) {
+  .header {
+    background-size: 100rem;
+  }
+}
+
+@media (min-width: 2140px) {
+  .header {
+    background-size: 120rem;
+  }
+}
+
+.header__container {
+  max-width: 120rem;
+  width: 90%; /* cuando el ancho sea menos de 1200px va a ocupar el 90% */
+  margin: 0 auto; /* centra el contenedor */
+}
+
+.header__navbar {
+}
+
+@media (min-width: 768px) {
+  .header__navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.header__logo {
+  width: 15rem;
+  margin: 0 auto 3rem auto;
+}
+
+@media (min-width: 768px) {
+  .header__logo {
+    margin: 0;
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}
+
+.navigation__link {
+  color: var(--primary-color);
+}
+
+@media (min-width: 768px) {
+  .navigation__link {
+    color: var(--white);
+  }
+}
+
+@media (min-width: 768px) {
+  .header__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+}
+
+.header__heading {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .header__heading {
+    text-align: left;
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__image {
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+}
+
+.header__button {
+  color: var(--white);
+  background-color: var(--primary-color);
+  display: block;
+  margin-bottom: 4rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .header__button {
+    padding: 1rem 2rem;
+    display: inline-block;
+  }
+}
