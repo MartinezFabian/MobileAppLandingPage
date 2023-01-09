@@ -55,7 +55,7 @@ img {
   height: auto;
 }
 
-.container {
+[class$="__container"] {
   max-width: 120rem;
   width: 90%; /* cuando el ancho sea menos de 1200px va a ocupar el 90% */
   margin: 0 auto; /* centra el contenedor */
@@ -99,15 +99,6 @@ img {
   .header {
     background-size: 120rem;
   }
-}
-
-.header__container {
-  max-width: 120rem;
-  width: 90%; /* cuando el ancho sea menos de 1200px va a ocupar el 90% */
-  margin: 0 auto; /* centra el contenedor */
-}
-
-.header__navbar {
 }
 
 @media (min-width: 768px) {
