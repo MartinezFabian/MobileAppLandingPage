@@ -189,3 +189,57 @@ img {
     display: inline-block;
   }
 }
+
+/* ¿Que es Nucleus? */
+
+.nucleus {
+  margin-top: 3rem;
+}
+
+.nucleus__heading {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.nucleus__grid {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+  .nucleus__grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 5rem;
+    align-items: center;
+  }
+}
+
+.nucleus__image {
+}
+
+.list {
+}
+
+.list__element {
+  box-shadow: 0px 0px 15px 3px rgb(0 0 0 / 0.15);
+  padding: 2rem;
+  margin-bottom: 5rem;
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+
+.list__element:hover {
+  transform: scale(1.05);
+}
+
+.list__heading {
+  margin: 0;
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+
+.list__text {
+  margin: 0;
+  font-size: 2rem;
+}
