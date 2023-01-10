@@ -243,7 +243,31 @@ img {
 
 .security {
   background-color: var(--primary-color);
-  padding: 10rem 0;
+  padding: 20rem 0;
+  position: relative;
+  margin: 10rem 0;
+  overflow: hidden;
+}
+
+.security::before,
+.security::after {
+  background-color: var(--white);
+  content: "";
+  height: 20rem;
+  width: 120%;
+  position: absolute;
+}
+
+.security::before {
+  top: -10rem;
+  left: 0;
+  transform: rotate(3deg);
+}
+
+.security::after {
+  bottom: -10rem;
+  left: -5rem;
+  transform: rotate(3deg);
 }
 
 .security__heading {
