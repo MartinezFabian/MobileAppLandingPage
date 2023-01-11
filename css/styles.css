@@ -405,3 +405,32 @@ img {
 .testimonial__author::before {
   content: "- ";
 }
+
+/* FOOTER */
+
+.footer {
+  background-color: #5a30a0;
+  padding: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .footer__flex {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footer__logo {
+  width: 20rem;
+  margin: 0 auto 4rem auto;
+}
+
+@media (min-width: 768px) {
+  .footer__logo {
+    margin: 0 auto;
+  }
+}
+
+.navigation__link--white {
+  color: var(--white);
+}
